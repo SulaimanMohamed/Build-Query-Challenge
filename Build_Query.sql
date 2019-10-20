@@ -3,13 +3,13 @@
 /*Task 1
 
 Tour(TourName, Description)
-PK TourName
+PK (TourName)
 Client(ClientID, Surname, Givename, Gender)
-PK ClientID
+PK (ClientID)
 Event(EventYear, EventMonth, EventDay, Fee, TourName)
-PK EventYear, EventMonth, EventDay, TourName
+PK (EventYear, EventMonth, EventDay, TourName)
 Booking(DateBooked, ClientID, Payment, EventYear, EventMonth, EventDay)
-PK EventYear, EventMonth, EventDay, TourName, ClientID
+PK (EventYear, EventMonth, EventDay, TourName, ClientID)
 FK (TourName) REFERENCES Tour
 FK (ClientID) REFERENCES Client
 FK (EventYear, EventMonth, EventDay) REFERENCES Event

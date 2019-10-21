@@ -136,6 +136,11 @@ Drop table IF EXISTS dbo.BOOKINGB;
 SELECT * FROM BOOKINGB
 
 --Task 6(Test queries)
+SELECT EventMonth, TourName, COUNT(ClientID) as 'Num Bookings'
+FROM Booking
+GROUP BY EventMonth, TourName;
+Checked against the generated table in task 4 query 2.
+
 
 ;
 
